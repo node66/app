@@ -1,0 +1,25 @@
+{
+  "time": "20020131T235959",
+  "data": {
+    "A123": {
+      "lat": 21.34,
+      "lon": 64.12,
+      "some_key0": "test",
+      "some_key1": "test",
+      "some_key2": "test",
+      "some_key3": "test",
+      "some_key4": "test",
+      "some_key5": "test",
+      "some_key6": "test",
+      "some_key7": "test",
+      "some_key8": "test",
+      "some_key9": "test"
+    },
+    "b123": {
+      "lat": 213.34,
+      "lon": 642.12,
+      "some_key0": "test",
+      "some_key1": "test"
+    }
+  }
+}
