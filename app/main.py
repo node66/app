@@ -50,9 +50,7 @@ async def get_feed(feed_id):
 
 @app.get("/api/update", status_code=status.HTTP_200_OK)
 async def get_update(feed_id):
-    filename = str(copy_path) + '/' + feed_id + '.json'
-    try:
-        with open(filename, 'r') as f:
-            update(Path(filename))
-    except FileNotFoundError:
+    filename = str(orig_path) + '/' + feed_id + '.json'
+    if not os.path.exists(filename):
         raise HTTPException(status_code=403)
+    update(Path(filename))
